@@ -11,6 +11,13 @@ func main() {
 
 	fmt.Println("Depois da função escrever começar a ser executada")
 
+	// for {
+	// 	mensagem, aberto := <-canal
+	// 	if !aberto {
+	// 		break
+	// 	}
+	// 	fmt.Println(mensagem)
+	// }
 	for mensagem := range canal {
 		fmt.Println(mensagem)
 	}
