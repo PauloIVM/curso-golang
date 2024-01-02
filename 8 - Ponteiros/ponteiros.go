@@ -19,8 +19,10 @@ func main() {
 	ponteiro = &variavel3
 
 	fmt.Println(variavel3, ponteiro)
-
 	variavel3 = 150
 	fmt.Println(variavel3, *ponteiro)
 
+	// ENDEREÇO VS REF
+	fmt.Println(*ponteiro, &variavel3) // 150 0xc000092018
+	fmt.Println(variavel3, ponteiro)   // 150 0xc000092018
 }
